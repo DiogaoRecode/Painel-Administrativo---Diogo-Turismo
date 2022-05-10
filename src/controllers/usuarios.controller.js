@@ -9,7 +9,7 @@ module.exports = {
   async create(req,res){
     const {nome_usuario, email_usuario, tipo_usuario,senha_usuario} = req.body;
     let data = {};
-    let user =  await Usuario.findOne({email_Usuario});
+    let user =  await Usuario.findOne({nome_usuario});
     
     if(!user){
         data = {nome_usuario,email_usuario,tipo_usuario,senha_usuario};
