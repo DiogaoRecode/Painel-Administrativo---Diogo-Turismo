@@ -11,13 +11,13 @@ const port = process.env.PORT || 5000; //commando para identificar a porta utili
 
 
 {/*  Conexao com MONGO SERVER
-mongoose.connect("mongodb://0.0.0.0:27017/BuyEnergy",{    //coloca-se o link de conexao com o mongoDB
+mongoose.connect("mongodb://0.0.0.0:27017/NomedoBanco",{    //coloca-se o link de conexao com o mongoDB
   useUnifiedTopology:true,
   useNewUrlParser:true,
 */}
 
 //Para  conectar com MONGO ATLAS
-mongoose.connect("mongodb+srv://diogaoramalho:82032152@cluster0.zt6gy.mongodb.net/BuyEnergy",{    //coloca-se o link de conexao com o mongoDB
+mongoose.connect("###############",{    //coloca-se o link de conexao com o mongoDB
   useUnifiedTopology:true,
   useNewUrlParser:true,
 },function (err){
