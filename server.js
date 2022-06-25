@@ -10,11 +10,16 @@ const app= express(); //comando que vai receber o pacote express
 const port = process.env.PORT || 5000; //commando para identificar a porta utilizada, senão tiver irá adotar o valor 5000
 
 
-
+{/*  Conexao com MONGO SERVER
 mongoose.connect("mongodb://0.0.0.0:27017/BuyEnergy",{    //coloca-se o link de conexao com o mongoDB
   useUnifiedTopology:true,
   useNewUrlParser:true,
-  //useFindAndModify:false
+*/}
+
+//Para  conectar com MONGO ATLAS
+mongoose.connect("mongodb+srv://diogaoramalho:82032152@cluster0.zt6gy.mongodb.net/BuyEnergy",{    //coloca-se o link de conexao com o mongoDB
+  useUnifiedTopology:true,
+  useNewUrlParser:true,
 },function (err){
     if(err){
       console.log(err)
